@@ -1,0 +1,11 @@
+[16-Oct-2024 12:29:12 UTC] WordPress database error Table 'wp3t_e_events' already exists for query CREATE TABLE `wp3t_e_events` (
+			id bigint(20) unsigned auto_increment primary key,
+			event_data text null,
+			created_at datetime not null
+		) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci; made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Elementor\Plugin->init, Elementor\Plugin->init_components, Elementor\Core\Admin\Admin->__construct, Elementor\Plugin->init_common, Elementor\Core\Common\App->init_components, Elementor\Core\Common\Modules\EventTracker\Module->__construct, Elementor\Core\Common\Modules\EventTracker\DB->__construct, Elementor\Core\Common\Modules\EventTracker\DB->create_table
+[16-Oct-2024 12:29:12 UTC] WordPress database error Duplicate key name 'created_at_index' for query ALTER TABLE wp3t_e_events
+    		ADD INDEX `created_at_index` (`created_at`)
+		 made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Elementor\Plugin->init, Elementor\Plugin->init_components, Elementor\Core\Admin\Admin->__construct, Elementor\Plugin->init_common, Elementor\Core\Common\App->init_components, Elementor\Core\Common\Modules\EventTracker\Module->__construct, Elementor\Core\Common\Modules\EventTracker\DB->__construct, Elementor\Core\Common\Modules\EventTracker\DB->add_indexes
+[16-Oct-2024 12:31:26 UTC] PHP Warning:  chmod(): No such file or directory in /home/rajshahi/public_html/wp-admin/includes/class-wp-filesystem-direct.php on line 173
+[16-Oct-2024 12:31:26 UTC] PHP Warning:  dir(/home/rajshahi/public_html/wp-content/upgrade/image-optimization.1.5.4/image-optimization/modules/connect/classes/exceptions/): failed to open dir: No such file or directory in /home/rajshahi/public_html/wp-admin/includes/class-wp-filesystem-direct.php on line 636
+[16-Oct-2024 12:31:26 UTC] PHP Warning:  unlink(/tmp/image-optimization.1.5.4.zip): No such file or directory in /home/rajshahi/public_html/wp-admin/includes/class-wp-upgrader.php on line 387
